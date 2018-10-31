@@ -16,6 +16,10 @@
 		36BF9B2F2187004C00F5B988 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 36BF9B2E2187004C00F5B988 /* main.m */; };
 		36BF9B392187004C00F5B988 /* MVVM_RAC_OCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36BF9B382187004C00F5B988 /* MVVM_RAC_OCTests.m */; };
 		36BF9B442187004C00F5B988 /* MVVM_RAC_OCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36BF9B432187004C00F5B988 /* MVVM_RAC_OCUITests.m */; };
+		36FF24342189A2990093D981 /* LKLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36FF24332189A2990093D981 /* LKLoginController.m */; };
+		36FF24372189A2D30093D981 /* LKLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 36FF24362189A2D30093D981 /* LKLoginViewModel.m */; };
+		36FF243A2189A3980093D981 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36FF24392189A3980093D981 /* LoginView.m */; };
+		36FF243C2189A3A70093D981 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36FF243B2189A3A70093D981 /* LoginView.xib */; };
 		B78D86FFB96D818147F2723F /* libPods-MVVM_RAC_OC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B69102E6AA8DF14F0E0D4D0 /* libPods-MVVM_RAC_OC.a */; };
 		BE6B53539CFECE385A593335 /* libPods-MVVM_RAC_OCTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA82D46A26FA6F9C46D0776A /* libPods-MVVM_RAC_OCTests.a */; };
 /* End PBXBuildFile section */
@@ -54,6 +58,13 @@
 		36BF9B3F2187004C00F5B988 /* MVVM_RAC_OCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVM_RAC_OCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36BF9B432187004C00F5B988 /* MVVM_RAC_OCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVM_RAC_OCUITests.m; sourceTree = "<group>"; };
 		36BF9B452187004C00F5B988 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36FF24322189A2990093D981 /* LKLoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKLoginController.h; sourceTree = "<group>"; };
+		36FF24332189A2990093D981 /* LKLoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKLoginController.m; sourceTree = "<group>"; };
+		36FF24352189A2D30093D981 /* LKLoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKLoginViewModel.h; sourceTree = "<group>"; };
+		36FF24362189A2D30093D981 /* LKLoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKLoginViewModel.m; sourceTree = "<group>"; };
+		36FF24382189A3980093D981 /* LoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
+		36FF24392189A3980093D981 /* LoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
+		36FF243B2189A3A70093D981 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		40DDE9C9CE0BA36C9DC8EF4D /* Pods-MVVM_RAC_OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM_RAC_OC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM_RAC_OC/Pods-MVVM_RAC_OC.debug.xcconfig"; sourceTree = "<group>"; };
 		49E182B2FC5E7B5A33A73731 /* libPods-MVVM_RAC_OCUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MVVM_RAC_OCUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B69102E6AA8DF14F0E0D4D0 /* libPods-MVVM_RAC_OC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MVVM_RAC_OC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +129,7 @@
 		36BF9B1E2187003E00F5B988 /* MVVM_RAC_OC */ = {
 			isa = PBXGroup;
 			children = (
+				36FF242A2189A2410093D981 /* Login */,
 				36BF9B1F2187003E00F5B988 /* AppDelegate.h */,
 				36BF9B202187003E00F5B988 /* AppDelegate.m */,
 				36BF9B222187003E00F5B988 /* ViewController.h */,
@@ -147,6 +159,52 @@
 				36BF9B452187004C00F5B988 /* Info.plist */,
 			);
 			path = MVVM_RAC_OCUITests;
+			sourceTree = "<group>";
+		};
+		36FF242A2189A2410093D981 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				36FF242B2189A2410093D981 /* Controller */,
+				36FF242C2189A2410093D981 /* Model */,
+				36FF242D2189A2410093D981 /* View */,
+				36FF242E2189A2410093D981 /* ViewModel */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		36FF242B2189A2410093D981 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				36FF24322189A2990093D981 /* LKLoginController.h */,
+				36FF24332189A2990093D981 /* LKLoginController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		36FF242C2189A2410093D981 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		36FF242D2189A2410093D981 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				36FF24382189A3980093D981 /* LoginView.h */,
+				36FF24392189A3980093D981 /* LoginView.m */,
+				36FF243B2189A3A70093D981 /* LoginView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		36FF242E2189A2410093D981 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				36FF24352189A2D30093D981 /* LKLoginViewModel.h */,
+				36FF24362189A2D30093D981 /* LKLoginViewModel.m */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		5949F16946BD7694E4BB919A /* Frameworks */ = {
@@ -280,6 +338,7 @@
 			files = (
 				36BF9B2C2187004C00F5B988 /* LaunchScreen.storyboard in Resources */,
 				36BF9B292187004C00F5B988 /* Assets.xcassets in Resources */,
+				36FF243C2189A3A70093D981 /* LoginView.xib in Resources */,
 				36BF9B272187003E00F5B988 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,9 +421,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36FF243A2189A3980093D981 /* LoginView.m in Sources */,
 				36BF9B242187003E00F5B988 /* ViewController.m in Sources */,
 				36BF9B2F2187004C00F5B988 /* main.m in Sources */,
+				36FF24342189A2990093D981 /* LKLoginController.m in Sources */,
 				36BF9B212187003E00F5B988 /* AppDelegate.m in Sources */,
+				36FF24372189A2D30093D981 /* LKLoginViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,7 +600,10 @@
 				DEVELOPMENT_TEAM = SYM7S6ENQ2;
 				INFOPLIST_FILE = MVVM_RAC_OC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.LIUSON.MVVM-RAC-OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -554,7 +619,10 @@
 				DEVELOPMENT_TEAM = SYM7S6ENQ2;
 				INFOPLIST_FILE = MVVM_RAC_OC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.LIUSON.MVVM-RAC-OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -569,7 +637,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SYM7S6ENQ2;
 				INFOPLIST_FILE = MVVM_RAC_OCTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.LIUSON.MVVM-RAC-OCTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -585,7 +657,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SYM7S6ENQ2;
 				INFOPLIST_FILE = MVVM_RAC_OCTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.LIUSON.MVVM-RAC-OCTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -600,7 +676,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SYM7S6ENQ2;
 				INFOPLIST_FILE = MVVM_RAC_OCUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.LIUSON.MVVM-RAC-OCUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -615,7 +695,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SYM7S6ENQ2;
 				INFOPLIST_FILE = MVVM_RAC_OCUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.LIUSON.MVVM-RAC-OCUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
