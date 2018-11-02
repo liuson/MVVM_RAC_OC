@@ -8,6 +8,7 @@
 
 #import "LKLoginController.h"
 #import "LoginView.h"
+#import "EnterController.h"
 
 @interface LKLoginController ()
 
@@ -19,7 +20,21 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.title = @"RAC";
+    
     LoginView *loginView = [[LoginView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
+    [loginView.loginVM.loginCommand.executionSignals.switchToLatest subscribeNext:^(id  _Nullable x) {
+        NSLog(@"success - vc");
+        BOOL success = [x boolValue];
+        if (success) {
+            //跳转
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                EnterController *enterVC = [[EnterController alloc] init];
+                [self.navigationController pushViewController:enterVC animated:YES];
+            });
+            
+        }
+    }];
     [self.view addSubview:loginView];
 }
 

@@ -1,0 +1,30 @@
+//
+//  PrefixHeader.pch
+//  MVVM_RAC_OC
+//
+//  Created by wayfor on 2018/11/2.
+//  Copyright © 2018年 LIUSON. All rights reserved.
+//
+
+#ifndef PrefixHeader_h
+#define PrefixHeader_h
+
+
+#define kScreenW ([UIScreen mainScreen].bounds.size.width)
+#define kScreenH ([UIScreen mainScreen].bounds.size.height)
+
+#define APIURL @"https://api.obooktech.com/v2/list/new-book"
+
+
+
+#import <AFNetworking.h>
+#import <MJRefresh/MJRefresh.h>
+#import <MJExtension/MJExtension.h>
+#import <WSProgressHUD.h>
+#import <ReactiveObjC/ReactiveObjC.h>
+
+#import "BaseHttpRequest.h"
+
+
+
+#endif /* PrefixHeader_h */

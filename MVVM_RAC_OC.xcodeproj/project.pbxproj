@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		065D83375C1C10CBC7F4F3EA /* libPods-MVVM_RAC_OCUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E182B2FC5E7B5A33A73731 /* libPods-MVVM_RAC_OCUITests.a */; };
+		364A1716218AA1B800959A34 /* EnterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 364A1715218AA1B800959A34 /* EnterController.m */; };
+		36A4AB55218C3693001C7F71 /* BaseHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A4AB54218C3693001C7F71 /* BaseHttpRequest.m */; };
+		36A4AB5A218C412D001C7F71 /* NewsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A4AB59218C412D001C7F71 /* NewsViewModel.m */; };
+		36A4AB5D218C4140001C7F71 /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A4AB5C218C4140001C7F71 /* NewsModel.m */; };
 		36BF9B212187003E00F5B988 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 36BF9B202187003E00F5B988 /* AppDelegate.m */; };
 		36BF9B242187003E00F5B988 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36BF9B232187003E00F5B988 /* ViewController.m */; };
 		36BF9B272187003E00F5B988 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36BF9B252187003E00F5B988 /* Main.storyboard */; };
@@ -42,6 +46,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		364A1714218AA1B800959A34 /* EnterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnterController.h; sourceTree = "<group>"; };
+		364A1715218AA1B800959A34 /* EnterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EnterController.m; sourceTree = "<group>"; };
+		36A4AB53218C3693001C7F71 /* BaseHttpRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseHttpRequest.h; sourceTree = "<group>"; };
+		36A4AB54218C3693001C7F71 /* BaseHttpRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseHttpRequest.m; sourceTree = "<group>"; };
+		36A4AB57218C3D68001C7F71 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		36A4AB58218C412D001C7F71 /* NewsViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsViewModel.h; sourceTree = "<group>"; };
+		36A4AB59218C412D001C7F71 /* NewsViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsViewModel.m; sourceTree = "<group>"; };
+		36A4AB5B218C4140001C7F71 /* NewsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsModel.h; sourceTree = "<group>"; };
+		36A4AB5C218C4140001C7F71 /* NewsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsModel.m; sourceTree = "<group>"; };
 		36BF9B1C2187003E00F5B988 /* MVVM_RAC_OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM_RAC_OC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36BF9B1F2187003E00F5B988 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		36BF9B202187003E00F5B988 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -104,6 +117,68 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36A4AB4C218C33F2001C7F71 /* OneVC */ = {
+			isa = PBXGroup;
+			children = (
+				36A4AB4D218C33F2001C7F71 /* Model */,
+				36A4AB4E218C33F2001C7F71 /* View */,
+				36A4AB4F218C33F2001C7F71 /* Viewcontroller */,
+				36A4AB50218C33F2001C7F71 /* ViewModel */,
+			);
+			path = OneVC;
+			sourceTree = "<group>";
+		};
+		36A4AB4D218C33F2001C7F71 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				36A4AB5B218C4140001C7F71 /* NewsModel.h */,
+				36A4AB5C218C4140001C7F71 /* NewsModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		36A4AB4E218C33F2001C7F71 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		36A4AB4F218C33F2001C7F71 /* Viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				364A1714218AA1B800959A34 /* EnterController.h */,
+				364A1715218AA1B800959A34 /* EnterController.m */,
+			);
+			path = Viewcontroller;
+			sourceTree = "<group>";
+		};
+		36A4AB50218C33F2001C7F71 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				36A4AB58218C412D001C7F71 /* NewsViewModel.h */,
+				36A4AB59218C412D001C7F71 /* NewsViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		36A4AB51218C366E001C7F71 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				36A4AB52218C366E001C7F71 /* Utils */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		36A4AB52218C366E001C7F71 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				36A4AB53218C3693001C7F71 /* BaseHttpRequest.h */,
+				36A4AB54218C3693001C7F71 /* BaseHttpRequest.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		36BF9B132187003E00F5B988 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +204,8 @@
 		36BF9B1E2187003E00F5B988 /* MVVM_RAC_OC */ = {
 			isa = PBXGroup;
 			children = (
+				36A4AB51218C366E001C7F71 /* Custom */,
+				36A4AB4C218C33F2001C7F71 /* OneVC */,
 				36FF242A2189A2410093D981 /* Login */,
 				36BF9B1F2187003E00F5B988 /* AppDelegate.h */,
 				36BF9B202187003E00F5B988 /* AppDelegate.m */,
@@ -139,6 +216,7 @@
 				36BF9B2A2187004C00F5B988 /* LaunchScreen.storyboard */,
 				36BF9B2D2187004C00F5B988 /* Info.plist */,
 				36BF9B2E2187004C00F5B988 /* main.m */,
+				36A4AB57218C3D68001C7F71 /* PrefixHeader.pch */,
 			);
 			path = MVVM_RAC_OC;
 			sourceTree = "<group>";
@@ -241,6 +319,7 @@
 				36BF9B182187003E00F5B988 /* Sources */,
 				36BF9B192187003E00F5B988 /* Frameworks */,
 				36BF9B1A2187003E00F5B988 /* Resources */,
+				BDBE7BBCF5AAE3D93417A8B3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -396,6 +475,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		BDBE7BBCF5AAE3D93417A8B3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MVVM_RAC_OC/Pods-MVVM_RAC_OC-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/WSProgressHUD/WSProgressHUD/WSProgressBundle.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/WSProgressBundle.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MVVM_RAC_OC/Pods-MVVM_RAC_OC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F9571EF5F968D5EACEAB6057 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -421,11 +520,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36A4AB5D218C4140001C7F71 /* NewsModel.m in Sources */,
+				36A4AB55218C3693001C7F71 /* BaseHttpRequest.m in Sources */,
 				36FF243A2189A3980093D981 /* LoginView.m in Sources */,
 				36BF9B242187003E00F5B988 /* ViewController.m in Sources */,
 				36BF9B2F2187004C00F5B988 /* main.m in Sources */,
+				364A1716218AA1B800959A34 /* EnterController.m in Sources */,
 				36FF24342189A2990093D981 /* LKLoginController.m in Sources */,
 				36BF9B212187003E00F5B988 /* AppDelegate.m in Sources */,
+				36A4AB5A218C412D001C7F71 /* NewsViewModel.m in Sources */,
 				36FF24372189A2D30093D981 /* LKLoginViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -598,6 +701,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SYM7S6ENQ2;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MVVM_RAC_OC/PrefixHeader.pch;
 				INFOPLIST_FILE = MVVM_RAC_OC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -617,6 +722,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SYM7S6ENQ2;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MVVM_RAC_OC/PrefixHeader.pch;
 				INFOPLIST_FILE = MVVM_RAC_OC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (

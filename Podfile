@@ -8,6 +8,11 @@ target 'MVVM_RAC_OC' do
   # Pods for MVVM_RAC_OC
   
   pod ‘ReactiveObjC’
+  pod 'MJExtension'
+  pod 'AFNetworking'
+  pod 'MJRefresh'
+  pod 'SDWebImage'
+  pod 'WSProgressHUD'
 
 
   target 'MVVM_RAC_OCTests' do

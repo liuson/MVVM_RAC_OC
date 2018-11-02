@@ -45,14 +45,16 @@
     @weakify(self);
     [self.loginVM.loginCommand.executionSignals.switchToLatest subscribeNext:^(id  _Nullable x) {
         @strongify(self);
+        NSLog(@"success - view");
+
         BOOL success = [x boolValue];
         self.loginBtn.enabled = YES;
         if (success) {
 //            [self goToLoginSuccessVC];
             self.loginHUD.hidden = NO;
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 self.loginHUD.hidden = YES;
-
+                
             });
         }
     }];

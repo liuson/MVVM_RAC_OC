@@ -23,4 +23,8 @@
 
 // command
 @property (nonatomic, strong) RACCommand *loginCommand;
+
+//@property (nonatomic,strong) RACCommand *ditLoginCommand;
+
+
 @end

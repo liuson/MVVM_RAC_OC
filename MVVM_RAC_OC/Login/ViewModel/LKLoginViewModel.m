@@ -38,14 +38,37 @@
     
     self.loginCommand = [[RACCommand alloc] initWithEnabled:self.loginEnableSignal signalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
         @strongify(self);
+        NSLog(@"login-1");
         return [self loginSignal];
     }];
     
+//    self.ditLoginCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
+//        @strongify(self)
+//        return [self loginActionSignal];
+//    }];
+//    
 }
+
+//-(RACSignal *)loginActionSignal{
+//    @weakify(self);
+//    return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+//        @strongify(self);
+//        [self pushNavWay];
+//        [subscriber sendCompleted];
+//        return nil;
+//    }];
+//}
+
+//- (void)pushNavWay{
+//    if ([]) {
+//        <#statements#>
+//    }
+//}
 
 - (RACSignal *)loginSignal{
     return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
         [self loginWithUsername:self.username password:self.password complete:^(BOOL success) {
+             NSLog(@"login-2");
 //            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
 //
 //            });

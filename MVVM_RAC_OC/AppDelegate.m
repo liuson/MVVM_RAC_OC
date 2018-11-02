@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "LKLoginController.h"
+#import "EnterController.h"
 
 @interface AppDelegate ()
 
@@ -20,9 +21,9 @@
     // Override point for customization after application launch.
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    LKLoginController * guideVC = [[LKLoginController alloc]init];
-    
-    self.window.rootViewController  = guideVC;
+    EnterController * guideVC = [[EnterController alloc]init];
+    UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:guideVC];
+    self.window.rootViewController  = navi;
 
     [self.window makeKeyAndVisible];
 
